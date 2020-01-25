@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Голосование.</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+	<form action="https://sf-pyw.mosyag.in/sse/vote/cats" method="POST" id="cat_form" style = "display:none;" value=""></form>
+	<form action="https://sf-pyw.mosyag.in/sse/vote/dogs" method="POST" id="dog_form" style = "display:none;"></form>
+	<form action="https://sf-pyw.mosyag.in/sse/vote/parrots" method="POST" id="parrot_form" style = "display:none;"></form>
+
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 d-flex justify-content-center">
+                <h1>Проголосуйте за домашнее животное:</h1>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-3"></div>
+
+		<div class="col-2 d-flex justify-content-center">
+			<button id="cat" class="btn btn-success">За котов</button>
+		</div>
+		<div class="col-2 d-flex justify-content-center">
+			<button id="dog" class="btn btn-success">За собак</button>
+		</div>
+		<div class="col-2 d-flex justify-content-center">
+			<button id="parrot" class="btn btn-success">За попугаев</button>
+		</div>
+	</div>
+
+	<script src="src/script.js"></script>
+</body>
+</html>
